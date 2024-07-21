@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Google Drive ReOrganizer",
+    "description": "Extension to make your Google Drive look more like the Quick Access on File Explorer for Windows.",
+    "version": "0.1.0",
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "Extras/fizz.png"
+    },
+    "content_scripts": [
+        {
+        "js": ["content.js"],
+        "matches": ["https://drive.google.com/drive/my-drive"]
+        }
+    ],
+    "background": [
+        {
+        "service_worker": "serviceworker.js",
+        "type": "module"
+        }
+    ]
+}
