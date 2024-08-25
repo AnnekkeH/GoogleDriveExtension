@@ -1,12 +1,33 @@
 <html>
-
+  <!-- THIS IS FOR THE POPUP TRIGGERED WITH A CLICK -->
   <head>
-    <link href="style.css" rel="stylesheet"/> <!--Imports how we want the HTML to look-->
-    <!--Turns out you need the second bit for it to work-->
+    <!--CSS to tell the rest of the document how to look-->
+    <!--Might move this back to Style.css if I want the popups to look the same-->
+    <!--above note means i would need to add a link and reference to it in the heading of this doc-->
+    <style> 
+      html {
+        background-color: rgb(88, 88, 88);
+      } /* changes the whole document */
+
+      body {
+        width: 300px; /* changes width of box */
+        margin: 10 10; /* first number is top and bottom, second is left and right */ 
+                        /* you can specify all 4 directions, it moves in a clockwise pattern */
+      }
+
+      h1, h2, h3, h4, h5, h6, p, li {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      button {
+        color: purple; /* makes the text on the button purple */
+      }
+    </style>
   </head>
 
   <body>
-    <h1>Google Drive ReOrganizer</h1>
+    <h1>Chrome My Way</h1>
     <p>I will need the following parts for this part of the extension: </p>
 
     <button>Testing</button> <!--makes a button, if i remember right id need to add the page it links to here-->

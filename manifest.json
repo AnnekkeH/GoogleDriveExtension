@@ -11,8 +11,8 @@
     },
     "content_scripts": [
         {
-        "js": ["content.js"],
-        "matches": ["https://drive.google.com/drive/my-drive"]
+        "matches": ["https://drive.google.com/drive/*"],
+        "js": ["content.js"]
         }
     ],
     "background": [
