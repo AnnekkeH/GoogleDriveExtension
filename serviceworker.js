@@ -10,9 +10,14 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => { // checks every new tab
   })
   
   
-  
-  // need to detect when on a google drive page here
-    // basically when active tab == drive.google.com
-  // then send message to content.js to do things
-    // for now, just send something to the console
-  
+// tabs permission in manifest only
+// "grants an extension the ability to call tabs.query() against four sensitive properties on tabs.Tab instances: 
+// url, pendingUrl, title, and favIconUrl."
+
+// so should be something like tabs.query(url) or smth im reading
+// need to check every time a new tab is opened or refreshed (refreshed cuz it changes if someone goes like search > drive > drive home)
+
+// need to detect when on a google drive page here
+// basically when active tab == drive.google.com
+// then send message to content.js to do things
+// for now, just send something to the console

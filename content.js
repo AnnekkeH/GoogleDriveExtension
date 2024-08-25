@@ -1,11 +1,10 @@
-chrome.runtime.onMessage.addListener(
-  true,
-  modify() // DONT KNOW IF THIS WILL WORK --- THIS USES CALLBACKS SO ITS OUT OF DATE
-)
+// chromes example 
 
-function modify(){
-  console.log("please work for the love of god"); // prints regardless of the active tab so its not working somwehere FIX------------------------
-}
+chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) { // no clue how this stuff works
+  if (tabs[0].url === "https://drive.google.com/drive/my-drive"){
+    console.log("god should fear me");
+  }
+});
 
-// wait to get signal from background.js, when it does
-// print something to console also
+
+
