@@ -4,8 +4,7 @@
     "description": "Extension to make your Google Drive look more like the Quick Access on File Explorer for Windows.",
     "version": "0.1.0",
     "action": {
-      "default_popup": "hello.html",
-      "default_icon": "Extras/fizz.png"
+      "default_popup": "hello.html"
     },
     "content_scripts": [
         {
